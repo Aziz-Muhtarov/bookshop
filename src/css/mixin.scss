@@ -1,0 +1,4 @@
+// Миксин стиля на button
+@mixin button($width: 176px, $height: 45px, $border: solid 1px, $border-color: #4C3DB2,) {
+    box-shadow: 0 4px $blur $spread $color;
+  }

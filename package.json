@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "sass": "^1.80.4"
+  }
+}
