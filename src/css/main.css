@@ -14,7 +14,7 @@
   z-index: 1000;
   background-color: #fff;
   width: 100%;
-  padding: 47px 158px 40px 166px;
+  padding: 47px 82.71px 40px 90.55px;
   display: flex;
   text-align: center;
   align-items: center;
@@ -26,8 +26,8 @@
 .header_container .header_items {
   display: flex;
   gap: 40px;
-  padding-left: 242px;
-  padding-right: 253px;
+  padding-left: 188px;
+  padding-right: 188px;
   text-transform: uppercase;
   font-size: 10px;
   color: #5C6A79;
@@ -39,7 +39,7 @@
   font-weight: bold;
   transition: 0.5s;
 }
-.header_container .header_icons {
+.header_icons {
   display: flex;
   gap: 40px;
 }
