@@ -29,8 +29,8 @@ export class BookCard {
       card.innerHTML = `
         <img src="${this.image}" alt="Book cover" class="book-card__image" />
         <div class="book-card__details">
-          <h3>${this.title}</h3>
-          <p>${this.authors}</p>
+          <h3 class="book-card__title">${this.title}</h3>
+          <p class="book-card__authors">${this.authors}</p>
           <p class="book-card__description">${this.description}</p>
           <p><strong>${this.currency} ${this.price}</strong></p>
           <button class="book-card__button">Buy Now</button>

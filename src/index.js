@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
+// Cards rendering
 const booksContainer = document.querySelector(".books-container");
 const loadMoreButton = document.querySelector(".load-more");
 let currentQuery = "Business";
@@ -23,6 +22,8 @@ let startIndex = 0;
 async function renderBooks() {
   try {
     const books = await fetchBooks(currentQuery, 6, startIndex);
+    console.log("Fetched", books.length, books); // Лог количества и данных книг
+    booksContainer.innerHTML = ""; // Очистка контейнера
     books.forEach((bookData) => {
       const book = new BookCard({
         id: bookData.id,
