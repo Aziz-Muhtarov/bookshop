@@ -23,7 +23,20 @@ export function getCart() {
   return cart;
 }
 
+
+// Работа с корзиной
+
 export function updateCartCount() {
   const countElement = document.querySelector(".cart-count");
-  countElement.textContent = cart.length;
+  if (!countElement) return;
+
+  const itemCount = cart.length;
+
+  // Показываем или скрываем ярлык в зависимости от количества товаров
+  if (itemCount > 0) {
+    countElement.textContent = itemCount; // Устанавливаем текущую длину корзины
+    countElement.style.display = "flex"; // Отображаем ярлык
+  } else {
+    countElement.style.display = "none"; // Скрываем ярлык
+  }
 }

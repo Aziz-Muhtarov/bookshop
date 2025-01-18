@@ -28,7 +28,10 @@
             <div class="header_icons">
                 <a href="#"><img src="./src/img/user.png" alt="user"></a>
                 <a href="#"><img src="./src/img/search.png" alt="search"></a>
-                <a href="#"><img src="./src/img/shop bag.png" alt="shop-bag"></a>
+                <a href="#" class="shop-bag">
+                    <img src="./src/img/shop bag.png" alt="shop-bag">
+                    <span class="cart-count">0</span>
+                </a>
             </div>
         </div>
     </header>
@@ -64,34 +67,28 @@
     <nav class="sidebar-menu">
         <div class="sidebar-menu__container">
             <ul>
-                <li><a href="#">Architecture</a></li>
-                <li><a href="#">Art & Fashion</a></li>
-                <li><a href="#">Biography</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Crafts & Hobbies</a></li>
-                <li><a href="#">Drama</a></li>
-                <li><a href="#">Fiction</a></li>
-                <li><a href="#">Food & Drink</a></li>
-                <li><a href="#">Health & Wellbeing</a></li>
-                <li><a href="#">History & Politics</a></li>
-                <li><a href="#">Humor</a></li>
-                <li><a href="#">Poetry</a></li>
-                <li><a href="#">Psychology</a></li>
-                <li><a href="#">Science</a></li>
-                <li><a href="#">Technology</a></li>
-                <li><a href="#">Travel & Maps</a></li>
+                <li><a href="#" data-genre="Architecture">Architecture</a></li>
+                <li><a href="#" data-genre="Art & Fashion">Art & Fashion</a></li>
+                <li><a href="#" data-genre="Biography">Biography</a></li>
+                <li><a href="#" data-genre="Business">Business</a></li>
+                <li><a href="#" data-genre="Crafts & Hobbies">Crafts & Hobbies</a></li>
+                <li><a href="#" data-genre="Drama">Drama</a></li>
+                <li><a href="#" data-genre="Fiction">Fiction</a></li>
+                <li><a href="#" data-genre="Food & Drink">Food & Drink</a></li>
+                <li><a href="#" data-genre="Health & Wellbeing">Health & Wellbeing</a></li>
+                <li><a href="#" data-genre="History & Politics">History & Politics</a></li>
+                <li><a href="#" data-genre="Humor">Humor</a></li>
+                <li><a href="#" data-genre="Poetry">Poetry</a></li>
+                <li><a href="#" data-genre="Psychology">Psychology</a></li>
+                <li><a href="#" data-genre="Science">Science</a></li>
+                <li><a href="#" data-genre="Technology">Technology</a></li>
+                <li><a href="#" data-genre="Travel & Maps">Travel & Maps</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- CARD -->
     <div class="card_container">
-
-        <div class="header__cart">
-            <img src="cart-icon.png" alt="Cart" class="header__cart-icon">
-            <span class="cart-count">0</span>
-        </div>
-
         <section class="books">
             <div class="books-container"></div>
             <button class="load-more">Load More</button>
